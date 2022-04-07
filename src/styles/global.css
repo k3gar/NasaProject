@@ -15,10 +15,10 @@
 #root{
     position: relative;
     overflow-x: hidden;
+    /* overflow-y:scroll; */
 }
 body{
     background: linear-gradient(270deg, #011140 43.52%, #204F8C 133.47%);
-    /* overflow-y: hidden; */
 }
 h1{
     color: var(--cream);
@@ -29,6 +29,15 @@ h2{
     color: var(--cream);
     font-family: var(--tittle-font);
     font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+h4{
+    color: var(--cream);
+    font-family: var(--tittle-font);
+    font-weight: 600;
+    font-size: 20px;
 }
 .earth-image{
     z-index: -1;

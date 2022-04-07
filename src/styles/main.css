@@ -75,6 +75,29 @@ p{
     color: var(--cream);
 }
 
+.search-result{
+    margin: 0 25px;
+    height: 0px;
+}
+
+.search-result_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 55px;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.search-result_data img{
+    width: 150px;
+    height: 150px;
+}
+#myAnswer{
+    border: 1px solid yellow;
+}
+
 @media (min-width: 900px) {
     .main-search_section{
         flex-direction: row;
