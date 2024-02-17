@@ -35,6 +35,12 @@ main h1{
     height: 20vh;
 }
 
+.main-search_section form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 .main-search_section input {
     width: 90vw;
     height: 47px;
@@ -57,6 +63,17 @@ main h1{
     font-weight: 300;
     /* padding-left: 3%; */
     font-size: 20px;
+}
+
+.main-search_section input.input_error {
+    border: 2px solid rgb(202, 21, 21);
+}
+
+.invalid-coordinates_message {
+    font-family: var(--text-font);
+    margin: 0.5rem 1rem 1rem;
+    color: rgb(202, 21, 21);
+    font-weight: 600;
 }
 
 button{
