@@ -1,9 +1,9 @@
 import { useEffect, useState, useCallback } from "react";
 
-import { getImageEndpoint, fallbackImageUrl } from "../constants/endpoints";
-import useCoordinatesContext from "./useCoordinatesContext";
+import { getImageEndpoint, fallbackImageUrl } from "../constants";
+import { useCoordinatesContext } from "../hooks";
 
-const useFetchImage = (date) => {
+export const useFetchImage = (date) => {
   const [isLoading, setIsLoading] = useState(false);
   const [imageData, setImageData] = useState(undefined);
 
@@ -42,5 +42,3 @@ const useFetchImage = (date) => {
 
   return { imageData, isLoading, clearImageData };
 };
-
-export default useFetchImage;

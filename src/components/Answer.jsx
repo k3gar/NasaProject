@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+
 import MapImagesList from "./MapImagesList";
 
-import useCoordinatesContext from "../hooks/useCoordinatesContext";
+import { useCoordinatesContext } from "../hooks";
 import { areValidCoordinates, isInputValueEmpty } from "../utils";
 
 const Answer = () => {

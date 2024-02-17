@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-import imagesConfig from "../constants/imagesConfig";
+import { imagesConfig } from "../constants";
 
 import MapImage from "./MapImage";
 

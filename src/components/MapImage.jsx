@@ -1,4 +1,4 @@
-import useFetchImage from "../hooks/useFetchImage";
+import { useFetchImage } from "../hooks";
 import Spinner from "./Spinner";
 
 const MapImage = ({ config }) => {

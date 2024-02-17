@@ -1,12 +1,10 @@
 import { useContext } from "react";
 
-import { coordinatesContext } from "../context/CoordinatesContext";
+import { coordinatesContext } from "../context";
 
-const useCoordinatesContext = () => {
+export const useCoordinatesContext = () => {
   const context = useContext(coordinatesContext);
 
   if (!context) throw new Error("coordinatesContext is not defined");
   return { ...context };
 };
-
-export default useCoordinatesContext;

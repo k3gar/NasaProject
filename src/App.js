@@ -1,8 +1,11 @@
 import React from "react";
+
 import Header from "./components/Header";
 import Answer from "./components/Answer";
+
+import { CoordinatesContextProvider } from "./context";
+
 import "./styles/main.css";
-import { CoordinatesContextProvider } from "./context/CoordinatesContext";
 
 function App() {
   return (
