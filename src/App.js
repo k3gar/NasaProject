@@ -1,15 +1,17 @@
 import React from "react";
 import Header from "./components/Header";
-import Main from "./components/Main";
-import './styles/main.css'
-
+import Answer from "./components/Answer";
+import "./styles/main.css";
+import { CoordinatesContextProvider } from "./context/CoordinatesContext";
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Main/>
-    </div>
+    <CoordinatesContextProvider>
+      <div className="App">
+        <Header />
+        <Answer />
+      </div>
+    </CoordinatesContextProvider>
   );
 }
 
