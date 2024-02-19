@@ -18,7 +18,7 @@
     height: 100vh;
 }
 main{
-    height: calc(100vh - 68px);
+    height: calc(80vh - 68px);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -33,12 +33,6 @@ main h1{
     align-items: center;
     justify-content: space-between;
     height: 20vh;
-}
-
-.main-search_section form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 .main-search_section input {
@@ -65,17 +59,6 @@ main h1{
     font-size: 20px;
 }
 
-.main-search_section input.input_error {
-    border: 2px solid rgb(202, 21, 21);
-}
-
-.invalid-coordinates_message {
-    font-family: var(--text-font);
-    margin: 0.5rem 1rem 1rem;
-    color: rgb(202, 21, 21);
-    font-weight: 600;
-}
-
 button{
     width: 156px;
     height: 35px;
@@ -86,22 +69,6 @@ button{
     font-family: var(--tittle-font);
     font-weight: 300;
     font-size: 17px;
-    cursor: pointer;
-    transition: ease-in-out all 0.2s;
-}
-
-button.btn-go:hover {
-    background: rgb(71, 132, 211);
-}
-
-button.btn-clear {
-    margin: 0 10px;
-    background: rgb(140, 32, 32);
-}
-
-button.btn-clear:hover {
-    margin: 0 10px;
-    background: rgb(223, 77, 77);
 }
 
 p{
