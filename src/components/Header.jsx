@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <section className='header mt-10'>
+    <section className='header'>
         <img src="/assets/Group.png" className='header-logo' alt="NASA Logo"/>
     </section>
   )
