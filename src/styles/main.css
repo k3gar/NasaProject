@@ -1,117 +1,118 @@
-@import url('./global.css');
+@import url("./global.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.header{
-    height: 68px;
-    display: flex;
-    align-items: center;
-}
-
-.header-logo{
-    width: 102px;
-    height: 29px;
-    color: white;
-}
-.App{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-main{
-    height: calc(80vh - 68px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-main h1{
-    text-align: center;
+.header {
+  height: 68px;
+  display: flex;
+  align-items: center;
 }
 
-.main-search_section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 20vh;
+.header-logo {
+  width: 102px;
+  height: 29px;
+  color: white;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+main {
+  height: calc(80vh - 68px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main h1 {
+  text-align: center;
+}
+
+.main-search_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 20vh;
 }
 
 .main-search_section input {
-    width: 90vw;
-    height: 47px;
-    background: rgba(13, 13, 13, 0.67);
-    border-radius: 35px;
-    border: none;
-    outline: none;
-    color: var(--cream);
-    text-align: center;
-    vertical-align: middle;
-    /* padding-left: 3%; */
-    font-family: var(--tittle-font);
-    font-weight: 300;
-    font-size: 16px;
-
+  width: 90vw;
+  height: 47px;
+  background: rgba(13, 13, 13, 0.67);
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  color: var(--cream);
+  text-align: center;
+  vertical-align: middle;
+  /* padding-left: 3%; */
+  font-family: var(--tittle-font);
+  font-weight: 300;
+  font-size: 16px;
 }
-.main-search_section input::placeholder{
-    color: var(--cream);
-    font-family: var(--tittle-font);
-    font-weight: 300;
-    /* padding-left: 3%; */
-    font-size: 20px;
-}
-
-button{
-    width: 156px;
-    height: 35px;
-    background: rgba(32, 79, 140, 1);
-    border-radius: 35px;
-    border: none;
-    color: var(--cream);
-    font-family: var(--tittle-font);
-    font-weight: 300;
-    font-size: 17px;
+.main-search_section input::placeholder {
+  color: var(--cream);
+  font-family: var(--tittle-font);
+  font-weight: 300;
+  /* padding-left: 3%; */
+  font-size: 20px;
 }
 
-p{
-    color: var(--cream);
+button {
+  width: 156px;
+  height: 35px;
+  background: rgba(32, 79, 140, 1);
+  border-radius: 35px;
+  border: none;
+  color: var(--cream);
+  font-family: var(--tittle-font);
+  font-weight: 300;
+  font-size: 17px;
 }
 
-.search-result{
-    margin: 0 25px;
-    height: 0px;
+p {
+  color: var(--cream);
 }
 
-.search-result_grid{
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 55px;
-    align-items: center;
-    justify-items: center;
-
+.search-result {
+  margin: 0 25px;
+  height: 0px;
 }
 
-.search-result_data img{
-    width: 150px;
-    height: 150px;
+.search-result_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 55px;
+  align-items: center;
+  justify-items: center;
 }
-#myAnswer{
-    border: 1px solid yellow;
+
+.search-result_data img {
+  width: 150px;
+  height: 150px;
+}
+#myAnswer {
+  border: 1px solid yellow;
 }
 
 @media (min-width: 900px) {
-    .main-search_section{
-        flex-direction: row;
-    }
-    .main-search_section input {
-        width: 40vw;
-        margin-right: 15px;
-    }
-    main{
-        justify-content: center;
-        margin-top: 60px;
-    }
-    main h1{
-        text-align: left;
-        font-size: 90px;
-    }
+  .main-search_section {
+    flex-direction: row;
+  }
+  .main-search_section input {
+    width: 40vw;
+    margin-right: 15px;
+  }
+  main {
+    justify-content: center;
+    margin-top: 60px;
+  }
+  main h1 {
+    text-align: left;
+    font-size: 90px;
+  }
 }
