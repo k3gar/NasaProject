@@ -1,17 +1,16 @@
 import React from "react";
 
 const Place = ({ data: { date, msg, url } }) => {
+  const formattedDate = new Date(date).toLocaleDateString();
+  const formattedTime = new Date(date).toLocaleTimeString();
   return (
     <div className="search-result_data">
-      {msg === "No imagery for specified date." ? (
-        <img
-          src="https://www.mdzol.com/u/fotografias/m/2020/8/6/f850x638-944869_1022358_5050.png"
-          alt="Imagen de Mapa"
-        />
-      ) : (
-        <img src={url} alt="Imagen de Mapa" />
+      {msg === "No imagery for specified date." ? null : (
+        <>
+          <img src={url} alt="Imagen de Mapa" />
+          <p>{`Date: ${formattedDate} Time:${formattedTime}`}</p>
+        </>
       )}
-      <p>{date}</p>
     </div>
   );
 };
