@@ -8,7 +8,7 @@ export const validateCoordinates = (input, setErrorMessage) => {
   if (input.trim() === "") {
     setErrorMessage("");
   } else if (!coordinateRegex.test(input)) {
-    setErrorMessage("Invalid coordinates format");
+    setErrorMessage("Enter a valid coordinates.");
   } else {
     setErrorMessage("");
   }
