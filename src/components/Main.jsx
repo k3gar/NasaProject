@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
 import { constants, dates } from "../utils/constants";
-import { coordinatesOnly } from "../utils/formatters";
-import { validateCoordinates } from "../utils/validators";
+import { coordinatesOnly, validateCoordinates } from "../utils/validators";
 
 import Answer from "./Answer";
 
