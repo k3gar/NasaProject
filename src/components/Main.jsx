@@ -12,7 +12,7 @@ const Main = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   const API_URI = constants.API_URI;
-  const API_KEY = constants.NASA_API_KEY;
+  const API_KEY = constants.NASA_ACCESS;
 
   const renderAnswer = !errorMessage && !isLoading && searchResults.length > 0;
 
@@ -83,7 +83,7 @@ const Main = () => {
             onChange={handleInputChange}
           />
           <button
-            className={`px-4 py-6 bg-blue-500 text-white rounded-lg focus:outline-none flex justify-center items-center ${isLoading && "spinner"}`}
+            className={`${ isLoading ? "spinner" : "px-4 py-6 bg-blue-500 text-white rounded-lg focus:outline-none flex justify-center items-center"}`}
             type="button"
             onClick={handleSubmit}
             disabled={isLoading}
