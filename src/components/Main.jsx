@@ -83,7 +83,7 @@ const Main = () => {
             onChange={handleInputChange}
           />
           <button
-            className={`px-4 py-6 bg-blue-500 text-white rounded-lg focus:outline-none ${isLoading && "spinner"}`}
+            className={`px-4 py-6 bg-blue-500 text-white rounded-lg focus:outline-none flex justify-center items-center ${isLoading && "spinner"}`}
             type="button"
             onClick={handleSubmit}
             disabled={isLoading}
