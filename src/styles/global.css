@@ -1,34 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-    --tittle-font:"Oswald", sans-serif;
-    --text-font: "Heebo", sans-serif;
+:root{
+    --tittle-font:'Oswald', sans-serif;
+    --text-font: 'Heebo', sans-serif;
     --dark-blue: #011140;
     --soft-blue: #204F8C;
     --blue-sky: #4E8BBF;
     --cream: #EEDFD8;
     --black:#0D0D0D;
 }
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#root {
+#root{
     position: relative;
     overflow-x: hidden;
+    /* overflow-y:scroll; */
 }
-body {
+body{
     background: linear-gradient(270deg, #011140 43.52%, #204F8C 133.47%);
 }
-h1 {
+h1{
     color: var(--cream);
     font-family: var(--tittle-font);
     font-weight: 600;
 }
-h2 {
+h2{
     color: var(--cream);
     font-family: var(--tittle-font);
     font-weight: 600;
@@ -36,66 +33,32 @@ h2 {
     text-align: center;
     margin-bottom: 35px;
 }
-h4 {
+h4{
     color: var(--cream);
     font-family: var(--tittle-font);
     font-weight: 600;
     font-size: 20px;
 }
-.earth-image {
+.earth-image{
     z-index: -1;
     position: absolute;
     height: 100%;
     right: -130%;
-}
-.search-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-.error-message {
-    padding: 20px;
-    color: darkred;
-    font-weight: bold;
-    background-color: rgb(231, 83, 83);
-    border: 2px solid darkred;
-    border-radius: 5px;
-    text-align: center;
-}
-.spinner {
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #ffffff;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
+
 }
 
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@media (min-width: 350px) {
-    .earth-image {
+@media (min-width: 350px)  {
+    .earth-image{
         right: -65%;
     }
 }
-@media (min-width: 650px) {
-    .earth-image {
+@media (min-width: 650px)  {
+    .earth-image{
         right: -35%;
     }
 }
-@media (min-width: 1128px) {
-    .earth-image {
+@media (min-width: 1128px)  {
+    .earth-image{
         right: -30%;
     }
 }
