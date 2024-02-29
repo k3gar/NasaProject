@@ -36,7 +36,7 @@ main h1 {
     width: 90vw;
     height: 47px;
     background: rgba(13, 13, 13, 0.67);
-    border-radius: 35px;
+    border-radius: 10px;
     border: none;
     outline: none;
     color: var(--cream);
