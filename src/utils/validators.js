@@ -1,5 +1,5 @@
 export const coordinatesOnly = (input) => {
-  return input.replace(/[^0-9\.\-,]/g, "");
+  return input.replace(/[^0-9.\-,]/g, "");
 };
 
 export const validateCoordinates = (input, setErrorMessage) => {
