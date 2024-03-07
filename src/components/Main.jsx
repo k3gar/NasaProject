@@ -9,11 +9,11 @@ const Main = () => {
   const [error, setError] = useState('');
 
   const API_KEY = process.env.REACT_APP_NASA_API_KEY;
+  const errorMsg='Please enter both latitude and longitude.''
 
-  const fetchData = async () => {
-    console.log(API_KEY)
+  const fetchData = async () => {   
     if (!latitude || !longitude) {
-      setError('Please enter both latitude and longitude.');
+      setError(errorMsg);
       return;
     }
 
