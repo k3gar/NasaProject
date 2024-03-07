@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-ReactDOM.render(
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <img src="/assets/earth-3.png" alt="earth" className="earth-image"></img>
+    <img src="/assets/earth-3.png" alt="earth" className="earth-image" />
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
-
