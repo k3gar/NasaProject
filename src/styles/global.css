@@ -43,6 +43,22 @@ h4{
     z-index: -1;
     position: absolute;
     height: 100%;
-    right: -13%;
+    right: -130%;
 
+}
+
+@media (min-width: 350px)  {
+    .earth-image{
+        right: -65%;
+    }
+}
+@media (min-width: 650px)  {
+    .earth-image{
+        right: -35%;
+    }
+}
+@media (min-width: 1128px)  {
+    .earth-image{
+        right: -30%;
+    }
 }
