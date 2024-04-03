@@ -1,10 +1,12 @@
-@import url('./global.css');
+@import url("./global.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.header{
+.header {
     height: 68px;
     display: flex;
     align-items: center;
-}
 
 .header-logo{
     width: 102px;
@@ -114,4 +116,4 @@ p{
         text-align: left;
         font-size: 90px;
     }
-}
+}}
