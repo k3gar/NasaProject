@@ -1,117 +1,149 @@
 @import url('./global.css');
 
-.header{
-    height: 68px;
-    display: flex;
-    align-items: center;
+.header {
+  height: 68px;
+  display: flex;
+  align-items: center;
 }
 
-.header-logo{
-    width: 102px;
-    height: 29px;
-    color: white;
-}
-.App{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-main{
-    height: calc(80vh - 68px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-main h1{
-    text-align: center;
+.header-logo {
+  width: 102px;
+  height: 29px;
+  color: white;
 }
 
-.main-search_section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 20vh;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  height: calc(80vh - 68px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+main h1 {
+  text-align: center;
+}
+
+.main-search_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  margin: 1em 0;
+  background-color: #cdcdcd;
+  border-radius: 35px;
 }
 
 .main-search_section input {
-    width: 90vw;
-    height: 47px;
-    background: rgba(13, 13, 13, 0.67);
-    border-radius: 35px;
-    border: none;
-    outline: none;
-    color: var(--cream);
-    text-align: center;
-    vertical-align: middle;
-    /* padding-left: 3%; */
-    font-family: var(--tittle-font);
-    font-weight: 300;
-    font-size: 16px;
-
-}
-.main-search_section input::placeholder{
-    color: var(--cream);
-    font-family: var(--tittle-font);
-    font-weight: 300;
-    /* padding-left: 3%; */
-    font-size: 20px;
-}
-
-button{
-    width: 156px;
-    height: 35px;
-    background: rgba(32, 79, 140, 1);
-    border-radius: 35px;
-    border: none;
-    color: var(--cream);
-    font-family: var(--tittle-font);
-    font-weight: 300;
-    font-size: 17px;
-}
-
-p{
-    color: var(--cream);
-}
-
-.search-result{
-    margin: 0 25px;
-    height: 0px;
-}
-
-.search-result_grid{
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 55px;
-    align-items: center;
-    justify-items: center;
+  width: 90vw;
+  height: 47px;
+  background: #cdcdcd;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  color: black;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 3%;
+  font-family: var(--tittle-font);
+  font-weight: 300;
+  font-size: 20px;
 
 }
 
-.search-result_data img{
-    width: 150px;
-    height: 150px;
+.main-search_section input::placeholder {
+  color: black;
+  font-family: var(--tittle-font);
+  font-weight: 300;
+  /* padding-left: 3%; */
+  font-size: 16px;
 }
-#myAnswer{
-    border: 1px solid yellow;
+
+button.btn-go {
+  width: 156px;
+  height: 47px;
+  background: rgba(32, 79, 140, 1);
+  border-radius: 35px;
+  border: none;
+  color: var(--cream);
+  font-family: var(--tittle-font);
+  font-weight: 300;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+p {
+  color: var(--cream);
+}
+
+.search-result {
+  position: relative;
+  margin: 5em 0;
+  height: auto;
+  border-radius: 12px;
+  padding: 2em;
+}
+
+.search-result::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-color: #646e92;
+  z-index: -1;
+  border-radius: 12px;
+}
+
+.search-result_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 55px;
+  align-items: center;
+  justify-items: center;
+}
+
+.search-result_data img {
+  width: 100%;
+  height: auto;
+}
+
+.search-result_data p {
+  font-family: var(--tittle-font);
+  padding-bottom: 10px;
+}
+
+#myAnswer {
+  border: 1px solid yellow;
 }
 
 @media (min-width: 900px) {
-    .main-search_section{
-        flex-direction: row;
-    }
-    .main-search_section input {
-        width: 40vw;
-        margin-right: 15px;
-    }
-    main{
-        justify-content: center;
-        margin-top: 60px;
-    }
-    main h1{
-        text-align: left;
-        font-size: 90px;
-    }
+  .main-search_section {
+    flex-direction: row;
+  }
+
+  .main-search_section input {
+    width: 40vw;
+    margin-right: 15px;
+  }
+
+  main {
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  main h1 {
+    text-align: left;
+    font-size: 90px;
+  }
 }
