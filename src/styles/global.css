@@ -47,6 +47,13 @@ h4{
 
 }
 
+.buscar:hover{
+    color: white;
+    background-color: rgb(42 104 184 / 54%);
+} 
+
+
+
 @media (min-width: 350px)  {
     .earth-image{
         right: -65%;
@@ -59,6 +66,6 @@ h4{
 }
 @media (min-width: 1128px)  {
     .earth-image{
-        right: -30%;
+        right: -10%;
     }
 }
